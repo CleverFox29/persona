@@ -65,14 +65,15 @@ body {
     height: 100vh;
 
 }
-#Details{
-    padding-top:50px;
+
+#Details {
+    padding-top: 50px;
 }
 
 @media (prefers-color-scheme: dark) {
     #bgimage img {
 
-        filter:hue-rotate(180deg) invert() ;
+        filter: hue-rotate(180deg) invert();
     }
 }
 
@@ -92,17 +93,32 @@ body {
 #scroll {
     height: 100%;
     opacity: 0;
+    border-radius: 4px;
+    padding: 5px;
     transition: all 0.2s ease-in-out;
 }
-#scroll:hover{
+
+html:has(#scrollanc:hover) #scroll {
     opacity: 1;
 }
+
 html:has(#nameAndProfile:hover) #scroll {
     opacity: 1;
+    background-color: var(--background-color);
 }
-#scrollanc{
+
+#scroll:hover {
+
+    background-color: var(--background-color);
+
+}
+
+#scrollanc {
     aspect-ratio: 1;
+    width: 100%;
     height: 4%;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -110,7 +126,19 @@ html:has(#nameAndProfile:hover) #scroll {
 
 @media (prefers-color-scheme: dark) {
     #scroll {
-        filter:invert();
+        filter: invert();
+    }
+
+    #scroll:hover {
+        filter: none;
+        background-color: var(--text-color);
+
+    }
+
+    html:has(#nameAndProfile:hover) #scroll {
+        opacity: 1;
+        filter: none;
+        background-color: var(--text-color);
     }
 }
 
@@ -140,7 +168,7 @@ html:has(#nameAndProfile:hover) #scroll {
     padding: 5px;
     border-radius: 4px;
     margin: 2px;
-    
+
     transition: all 0.2s ease-in-out;
 }
 
