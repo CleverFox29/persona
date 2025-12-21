@@ -90,12 +90,18 @@ body {
     height: 100vh;
 }
 
+h5{
+    margin: 0px;
+}
+
 #scroll {
-    height: 100%;
     opacity: 0;
+    width: 4%;
+    aspect-ratio: 1;
     border-radius: 4px;
     padding: 5px;
     transition: all 0.2s ease-in-out;
+    
 }
 
 html:has(#scrollanc:hover) #scroll {
@@ -104,21 +110,23 @@ html:has(#scrollanc:hover) #scroll {
 
 html:has(#nameAndProfile:hover) #scroll {
     opacity: 1;
+    filter: invert();
     background-color: var(--background-color);
 }
 
 #scroll:hover {
-
+    filter: invert();
     background-color: var(--background-color);
 
 }
 
 #scrollanc {
-    aspect-ratio: 1;
-    width: 100%;
-    height: 4%;
+    padding: 4px;
+    height: fit-content;
+    width: 90%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -291,7 +299,7 @@ html:has(#nameAndProfile:hover) #scroll {
 }
 
 .edu {
-    padding: 10px;
+    padding: 20px;
     min-height: 100px;
     display: flex;
     transition: all 0.2s ease-in-out;
