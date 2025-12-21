@@ -151,12 +151,13 @@ html:has(#nameAndProfile:hover) #scroll {
 
 #nav {
     backdrop-filter: blur(10px);
+    background-color: var(--pagebg);
     position: fixed;
     width: 100%;
     font-size: 0px;
     z-index: 4;
     height: fit-content;
-    background-color: var(--pagebg);
+    
     color: var(--background-color);
     transition: all 0.2s ease-in-out;
     border-bottom-left-radius: 4px;
@@ -260,7 +261,8 @@ html:has(#nameAndProfile:hover) #scroll {
 
 .skill:hover {
     z-index: 1;
-    background-color: var(--text-color);
+    backdrop-filter: blur(10px);
+    background-color: var(--pagebg);
     color: var(--background-color);
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
@@ -309,7 +311,8 @@ html:has(#nameAndProfile:hover) #scroll {
 }
 
 .edu:hover {
-    background-color: var(--text-color);
+    backdrop-filter: blur(10px);
+    background-color: var(--pagebg);
     color: var(--background-color);
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
