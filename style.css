@@ -96,7 +96,7 @@ h5{
 
 #scroll {
     opacity: 0;
-    width: 4%;
+    height: 4vh;
     aspect-ratio: 1;
     border-radius: 4px;
     padding: 5px;
