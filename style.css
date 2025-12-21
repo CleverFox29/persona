@@ -13,6 +13,8 @@
     --background-color: white;
     /* Light Gray */
     --pagebg: rgba(0, 0, 0, 0.546);
+
+    --rad: 4px;
 }
 
 
@@ -27,7 +29,7 @@
         --pagebg: rgba(255, 255, 255, 0.281);
     }
 
-    
+
 }
 
 
@@ -99,7 +101,7 @@ h5 {
     opacity: 0;
     height: 4vh;
     aspect-ratio: 1;
-    border-radius: 4px;
+    border-radius: var(--rad);
     padding: 5px;
     transition: all 0.2s ease-in-out;
 
@@ -166,8 +168,8 @@ html:has(#nameAndProfile:hover) #scroll {
 
     color: var(--background-color);
     transition: all 0.2s ease-in-out;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: var(--rad);
+    border-bottom-right-radius: var(--rad);
     font-size: medium;
     padding: 2px;
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
@@ -181,7 +183,7 @@ html:has(#nameAndProfile:hover) #scroll {
     align-items: center;
     justify-content: center;
     padding: 5px;
-    border-radius: 4px;
+    border-radius: var(--rad);
     margin: 2px;
 
     transition: all 0.2s ease-in-out;
@@ -258,7 +260,7 @@ html:has(#nameAndProfile:hover) #scroll {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: var(--rad);
     transition: all 0.2s ease-in-out;
     text-align: center;
     margin: 2px;
@@ -312,7 +314,7 @@ html:has(#nameAndProfile:hover) #scroll {
     min-height: 100px;
     display: flex;
     transition: all 0.2s ease-in-out;
-    border-radius: 4px;
+    border-radius: var(--rad);
     text-align: center;
 }
 
