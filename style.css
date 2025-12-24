@@ -14,7 +14,7 @@
     /* Light Gray */
     --pagebg: rgba(0, 0, 0, 0.546);
 
-    --rad: 0px;
+    --rad: 6px;
 }
 
 
@@ -46,6 +46,7 @@ a {
 
 html,
 body {
+    background-color: var(--background-color);
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
